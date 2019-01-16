@@ -46,7 +46,7 @@ export default {
   props: ['id'],
   data() {
     return {
-      city: '',
+      // city: '',
       start: 0,
       movieHotData: [],
       count: 10,
@@ -56,7 +56,7 @@ export default {
     }
   },
   mounted() {
-    this.city = remote_ip_info["city"];
+    // this.city = remote_ip_info["city"];
      this.loading = true;
         this.loadMore();
         this.loading = false;

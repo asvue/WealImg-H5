@@ -2,7 +2,7 @@
   <div id="home">
     <div>
       <mt-header fixed :title="selected">
-        <mt-button slot="right">{{city}}</mt-button>
+        <!-- <mt-button slot="right">{{city}}</mt-button> -->
       </mt-header>
     </div>
     <keep-alive>
@@ -36,11 +36,11 @@ export default {
   data() {
     return {
       selected: '',
-      city: '',
+      // city: '',
     }
   },
   mounted() {
-    this.city = remote_ip_info["city"];
+    // this.city = remote_ip_info["city"];
     if (this.$route.params.page == undefined) {
       this.selected = '电影'
 
