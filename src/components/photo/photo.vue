@@ -3,7 +3,7 @@
     <div class="j-content">
       <div class="m-gallery" v-infinite-scroll="loadMores" infinite-scroll-disabled="loading" infinite-scroll-distance="5">
         <transition-group name="fade" tag="div">
-          <div v-for="(photo,idx) in imgData" :key="idx" class="item"  @click='getPhotoDetail(idx)'>
+          <div v-for="(photo,idx) in imgData" :key="photo" class="item"  @click='getPhotoDetail(idx)'>
             <img v-lazy="photo.imgsrc">
           </div>
         </transition-group>

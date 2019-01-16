@@ -2,47 +2,48 @@ import Vue from 'vue'
 //引入全局css样式
 import '../../../assets/css/normalize.css'
 // 引入懒加载
-import { Lazyload } from 'mint-ui';
-
-Vue.use(Lazyload);
+// import { Lazyload } from 'mint-ui';
+import Mint from 'mint-ui';
+Vue.use(Mint);
+// Vue.use(Lazyload);
 //引入路由
 import router from './router'
 import VueTouch from 'vue-touch'
 //引入加载动画
-import { Spinner } from 'mint-ui';
+// import { Spinner } from 'mint-ui';
 
-Vue.component(Spinner.name, Spinner);
-//引入顶部选项卡
-import { Navbar } from 'mint-ui';
+// Vue.component(Spinner.name, Spinner);
+// //引入顶部选项卡
+// import { Navbar } from 'mint-ui';
 
-Vue.component(Navbar.name, Navbar);
-import { Cell } from 'mint-ui';
+// Vue.component(Navbar.name, Navbar);
+// import { Cell } from 'mint-ui';
 
-Vue.component(Cell.name, Cell);
+// Vue.component(Cell.name, Cell);
 
-import { TabContainer, TabContainerItem } from 'mint-ui';
+// import { TabContainer, TabContainerItem } from 'mint-ui';
 
-Vue.component(TabContainer.name, TabContainer);
-Vue.component(TabContainerItem.name, TabContainerItem);
+// Vue.component(TabContainer.name, TabContainer);
+// Vue.component(TabContainerItem.name, TabContainerItem);
 
-//引入button
-import { Button } from 'mint-ui';
+// //引入button
+// import { Button } from 'mint-ui';
 
-Vue.component(Button.name, Button);
+// Vue.component(Button.name, Button);
 
-//引入底部tab
-import { Tabbar, TabItem } from 'mint-ui';
+// //引入底部tab
+// import { Tabbar, TabItem } from 'mint-ui';
 
-Vue.component(Tabbar.name, Tabbar);
-Vue.component(TabItem.name, TabItem);
+// Vue.component(Tabbar.name, Tabbar);
+// Vue.component(TabItem.name, TabItem);
 
-//引入滚动刷新
-import { InfiniteScroll } from 'mint-ui';
-Vue.use(InfiniteScroll);
+// //引入滚动刷新
+// import { InfiniteScroll } from 'mint-ui';
+// Vue.use(InfiniteScroll);
 
-//引入顶部导航栏
-import { Header } from 'mint-ui';
-Vue.component(Header.name, Header);
+// //引入顶部导航栏
+// import { Header } from 'mint-ui';
+// Vue.component(Header.name, Header);
 
 Vue.use(VueTouch, {name: 'v-touch'})
 
